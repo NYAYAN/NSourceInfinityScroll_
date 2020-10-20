@@ -1,0 +1,84 @@
+﻿.scroll-container {
+    overflow: hidden;
+    transition: background .4s linear;
+}
+
+.scroll-zone.simple {
+    height: 110vh;
+    border: 1px dotted black;
+    padding: 20px;
+    font-family: var(--mono);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+    .scroll-zone.simple.short {
+        height: 60vh;
+    }
+
+.scroll-zone.top-down,
+.scroll-zone.bottom-up {
+    background: white;
+    float: right;
+    width: 50%;
+    margin: 10vh 16px 40vh;
+    padding: 40px 20px;
+    color: black;
+    clear: right;
+    box-shadow: 0 12px 16px -8px rgba(0, 0, 0, .2);
+}
+
+.scroll-zone::before {
+    content: attr(data-bg);
+    display: block;
+    color: attr(data-bg);
+}
+
+.scroll-zone.active {
+    border: 3px solid black;
+}
+
+
+
+
+header,
+footer {
+    height: 170px;
+    background-color: gray;
+    font-size: 33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 19%;
+}
+
+.product-container {
+    min-height: 200px;
+    border: 1px solid gray;
+    /* width: calc(100% - 15px); */
+    margin-bottom: 10px;
+    padding: 25px;
+    margin: 10px;
+}
+
+.product.active {
+    border: 3px solid black;
+}

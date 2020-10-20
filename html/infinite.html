@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSource Infinity Scroll</title>
+</head>
+<style>
+    header,
+    footer {
+        height: 170px;
+        background-color: gray;
+        font-size: 33;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        /* margin: -10px; */
+    }
+
+    .product {
+        width: 33%;
+    }
+
+    .product-container {
+        min-height: 200px;
+        border: 1px solid gray;
+        /* width: calc(100% - 15px); */
+        margin-bottom: 10px;
+        padding: 25px;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <header>
+        Header
+    </header>
+
+    <!-- start-page ve load-page-counter backend tarafından set edilmesi gereken değerlerdir. -->
+    <div class="product-list scroll-container" start-page="0" load-page-counter="20">
+
+        <div class="product">
+            <div class="product-container">
+                Product
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-container">
+                Product
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-container">
+                Product
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-container">
+                Product
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-container">
+                Product
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-container">
+                Product
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-container">
+                Product
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-container">
+                Product
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-container">
+                Product
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-container">
+                Product
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        Footer
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="infinite.js"></script>
+</body>
+
+</html>
